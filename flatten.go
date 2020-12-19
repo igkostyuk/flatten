@@ -6,6 +6,7 @@ import (
 
 var ErrInvalidSquareMatrix = errors.New("invalid square matrix")
 
+// Clockwise flatten slice square matrix to slice in clockwise order.
 func Clockwise(matrix [][]int) ([]int, error) {
 	l := len(matrix)
 	if l == 0 {
